@@ -1,0 +1,72 @@
+<!DOCTYPE html><!--Indication au Navigateur que c'est un document .html-->
+
+<html LANGUE="FR"><!--Balise contenant du code html + Indication au Navigateur que ce doument est en français-->
+
+    <head><!--Balise contenant la tête de la page Web-->
+
+        <meta charset="utf-8"><!--Type d'encodage-->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"><!--Importation d'une nouvelle police-->
+        <script type="text/javascript">
+            function date_heure(id)
+            {
+                date = new Date;
+                annee = date.getFullYear();
+                mois = date.getMonth();
+                jour = date.getDate();
+                resultat = jour+'/'+mois+'/'+annee;
+                document.getElementById(id).innerHTML = resultat;
+                setTimeout('date_heure("'+id+'");','1000');
+                return true;
+            } 
+        </script><!--Script JavaScript(Qui affiche la date du jour)-->
+        <title>TP1 SI6</title><!--Titre dans la barre du Navigateur-->
+
+    </head><!--Fermeture balise contenant la tête de la page Web-->
+
+    <body><!--Balise contenant le corps de la page Web-->
+
+        <p align="left" >Premier paragraphe</p><!-- Paragraphe à gauche-->
+        <p align="right" >Deuxième paragraphe</p><!-- Paragraphe à droite-->
+        <p align="center" >Troisième paragraphe</p><!-- Paragraphe au centre-->
+
+        <br><br><br><br><!--Retour chariot-->
+        
+        <h1>Des <em><font color="brown">sites</font></em> accessibles à tous</h1><!--Grand titre-->
+        
+            <h3>Titre 1</h3><!--Sous titre-->
+               
+                <p> Le terme <font color="grey" font-style="italic" size="5">«<em><font color="brown">sites</font></em>  accessibles à tous»</font> désigne des <em><font color="brown">sites</font></em>  que tous les utilisateurs potentiels pourront visualiser de façon équivalente. Il s'agit en particulier d'utilisateurs aveugles qui consulteront les documents <font face="courier" color="green">HTML</font> par l'intermédiaire de synthèses vocales ou d'afficheurs braille, ou d'utilisateurs dont le handicap visuel nécessite l'utilisation de gros caractères. Mais sont concernés aussi les utilisateurs sourds ou déficients auditifs, les utilisateurs affectés de problèmes cognitifs. En dehors des problèmes de handicap, les utilisateurs d'accès par téléphone ou en voiture vont se trouver face aux mêmes types de problèmes.</p><!--Paragraphe 1-->
+       
+            <h3>Titre 2</h3><!--Sous titre-->
+        
+                <p><font face="Quicksand" color="green" size="5">Construire des <em><font color="brown">sites</font></em>  accessibles à tous ne présente cependant pas en général de contraintes très lourdes. L'expérience montre de plus que cela  augmente  la  clarté  des  documents.  D'autre  part,  cela  permet bien souvent  de gagner du  temps  lors de la  rédaction de documents <font face="courier">HTML.</font></font></p><!--Paragraphe 2-->
+       
+        <h1>Contraintes</h1><!--Grand titre-->
+            
+            <h3>Titre 3</h3><!--Sous titre-->
+            
+                <p align="center">Dans le cas d'un utilisateur déficient visuel, ou bien d'une consultation par<br> téléphone,<font size="5" color="grey" font-style="italic" size="5"> le document original n'est pas perçu <br> globalement</font> comme dans le cas de l'utilisation d'un navigateur graphique<br> classique, mais ponctuellement, par fragments, que l'utilisateur doit en quelque<br> sorte ré-assembler mentalement pour reconstituer l'information fournie dans le<br> document.</p><!--Paragraphe 3-->
+                
+            <h3>Titre 4</h3><!--Sous titre-->
+                
+                <p><em>Un bon moyen de se rendre compte de ce problème de découper un rectangle de 2 cm de haut par 5 de large au milieu d’une feuille de papier, et de visualiser un document à travers ce trou, en utilisant un navigateur classique, ou bien de visualiser un document en réduisant la fenêtre du navigateur à la hauteur d’une ligne et la largeur de 2 mots.</em></p><!--Paragraphe 4-->
+            
+            <h3>Titre 5</h3><!--Sous titre-->
+            
+                <p>Nous verrons aussi qu'il est nécessaire de rendre accessible les blocs d'information uniquement visuels en leur apportant <font size="5" color="grey" font-style="italic" size="5">un complément textuel dit alternatif</font>, c'est-à-dire qui sera substitué à l'élément graphique dans le cas d'un navigateur incapable de le présenter. De même, les utilisateurs ne naviguent pas forcément tous avec des dispositifs de pointage visuels, comme une souris.</p><!--Paragraphe 5-->
+    
+        <hr><!--Trace une ligne horizontal-->
+
+        <br><!--Retour chariot-->
+
+        <p align="right">
+            <span id="date_heure"></span>
+            <script type="text/javascript">window.onload = date_heure('date_heure');</script><!--Exécution du Script-->
+        </p>
+
+    </body><!--Fermeture balise contenant le corps de la page Web-->
+
+
+
+
+</html><!--Fermeture balise contenant du code html-->
